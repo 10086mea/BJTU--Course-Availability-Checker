@@ -4,7 +4,7 @@
 // @version      1.2
 // @description  适用于任选课阶段，监测特定课程的余量，并在有余量时发送浏览器通知，自动点击提交，仅需手动填写验证码。打开https://aa.bjtu.edu.cn/course_selection/courseselecttask/selects_action/?action=load&iframe=school&page=1&perpage=1000使用
 // @author       上条当咩
-// @match        *://aa.bjtu.edu.cn/*
+// @match        https://aa.bjtu.edu.cn/course_selection/courseselecttask/selects_action/?action=load&iframe=school&page=1&perpage=1000
 // @icon         https://yaya.csoci.com:1314/files/spc_ico_sora_sd.jpg
 // @grant        GM_xmlhttpRequest
 // @grant        GM_notification
