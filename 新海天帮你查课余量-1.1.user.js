@@ -2,7 +2,7 @@
 // @name         新海天帮你查课余量
 // @namespace    http://tampermonkey.net/
 // @version      1.2
-// @description  适用于任选课阶段，监测特定课程的余量，并在有余量时发送浏览器通知，自动点击提交，仅需手动填写验证码。打开https://aa.bjtu.edu.cn/course_selection/courseselecttask/selects_action/?action=load&iframe=school&page=1&perpage=1000使用
+// @description  监测特定课程的余量，并在有余量时发送浏览器通知，自动点击提交，仅需手动填写验证码
 // @author       上条当咩
 // @match        https://aa.bjtu.edu.cn/course_selection/courseselecttask/selects_action/?action=load&iframe=school&page=1&perpage=1000
 // @icon         https://yaya.csoci.com:1314/files/spc_ico_sora_sd.jpg
@@ -14,9 +14,12 @@
     'use strict';
     // 您的愿望单课程数组
     var wishListCourses = [
-        //'C112002B:初级综合英语 01',
-        //'C112004B:高级综合英语 02',
-        'A121085B:游泳-自由泳 01',
+        'A121033B 乒乓球 01',
+        'A121033B 乒乓球 16',
+        'A121033B 乒乓球 15',
+        'A121033B 乒乓球 12',
+        'A121066B 羽毛球(高级) 20',
+        'A022010B 人格心理学与个人成长 01',
     ];//必须填写序号，同一课程只能选一个时间段，不填脚本会爆炸
 
     // 与课程对应的课程号
